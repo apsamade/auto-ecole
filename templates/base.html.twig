@@ -17,23 +17,13 @@
 		{% endblock %}
 	</head>
 	<body>
-		<nav>
-            <a href="/" class="logo"><img src="/assets/img/logo/logo.png" alt="logo auto école"></a>
-			<ul>
-				<li>
-					<a href="/">Menu</a>
-				</li>
-				<li>
-					<a href="/presentation">Présentation</a>
-				</li>
-				<li>
-					<a href="/contact">Contact</a>
-				</li>
-			</ul>
-			<ul>
-				<li><a href="/connexion">Connexion</a></li>
-			</ul>
-		</nav>
+	<style>
+	h1{
+		text-align: center;
+		padding-top: 120px;
+	}
+	</style>
+		{% include 'partials/nav.html.twig' %}
 		{% block body %}{% endblock %}
 	</body>
 </html>
